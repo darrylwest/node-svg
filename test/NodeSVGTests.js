@@ -11,21 +11,32 @@ var should = require('chai').should(),
 describe('MockBrowser', function() {
     'use strict';
 
-    var createOptions = function() {
-        var opts = {},
-            document = jsdom( '<!DOCTYPE html><html><body></body></html>' );
+    var document = jsdom( '<!DOCTYPE html><html><body></body></html>' ),
+        createOptions;
 
-        opts.document = document;
-        opts.window = document.parentWindow;
+    createOptions = function() {
+        var opts = {
+            document: document
+        };
 
         return opts;
     };
 
     describe('#instance', function() {
+        var svg = new NodeSVG( createOptions() );
+
         it('should create and instance of node svg', function() {
-            var svg = new NodeSVG( createOptions() );
 
             should.exist( svg );
+        });
+
+        it('should create a surface object', function() {
+            var container = document.createElement('div' ),
+                surface;
+
+            surface = svg.createSVGSurface( container, 250, 250 );
+
+            should.exist( surface );
         });
 
     });
