@@ -23,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/darrylwest/node-svg/issues"
   },
-  "homepage": "https://github.com/darrylwest/node-svg"
+  "homepage": "https://github.com/darrylwest/node-svg",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "gulp-mocha": "^2.0.1",
+    "gulp-plumber": "^1.0.0",
+    "jshint-stylish": "^1.0.1"
+  }
 }
