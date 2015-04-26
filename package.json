@@ -1,7 +1,7 @@
 {
   "name": "node-svg",
   "version": "0.90.10",
-  "description": "a server-side implementation of svg.js",
+  "description": "A server-side adaption of [svg.js](http://svgjs.com/) written by [Wout Fierens](https://www.npmjs.com/~wout).",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -30,6 +30,7 @@
     "gulp-jshint": "^1.10.0",
     "gulp-mocha": "^2.0.1",
     "gulp-plumber": "^1.0.0",
+    "gulp-util": "^3.0.4",
     "jshint-stylish": "^1.0.1"
   }
 }

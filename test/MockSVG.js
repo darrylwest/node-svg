@@ -4,8 +4,6 @@
  * @author: darryl.west@raincitysoftware.com
  * @created: 2015.04.25
  */
-var Browser = require( '../../app/delegates/Browser' ),
-    MockBrowser = require( 'mock-browser' ).mocks.MockBrowser;
 
 var MockSVG = function() {
     'use strict';
