@@ -1,0 +1,27 @@
+{
+  "name": "node-svg",
+  "version": "0.90.10",
+  "description": "a server-side implementation of svg.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darrylwest/node-svg.git"
+  },
+  "keywords": [
+    "svg",
+    "svg.js",
+    "server-side-svg"
+  ],
+  "author": "darryl.west <darryl.west@raincitysoftware.com> (http://blog.raincitysoftware.com/)",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/darrylwest/node-svg/issues"
+  },
+  "homepage": "https://github.com/darrylwest/node-svg"
+}
