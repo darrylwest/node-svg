@@ -11,13 +11,15 @@ var should = require('chai').should(),
 describe('MockBrowser', function() {
     'use strict';
 
-    var document = jsdom('mock' ),
+    var document = jsdom( 'mock' ),
         window = document.parentWindow;
 
     describe('#instance', function() {
         it('should create and instance of node svg', function() {
             var svg = new NodeSVG();
 
+            should.exist( document );
+            should.exist( window );
             should.exist( svg );
         });
 
