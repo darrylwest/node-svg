@@ -14,14 +14,11 @@ describe('MockBrowser', function() {
     var document = jsdom('mock' ),
         window = document.parentWindow;
 
-    global.document = document;
-    global.window = window;
-
     describe('#instance', function() {
         it('should create and instance of node svg', function() {
-            var svg; // = new NodeSVG();
+            var svg = new NodeSVG();
 
-            should.exist( document );
+            should.exist( svg );
         });
 
     });
